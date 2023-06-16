@@ -4,8 +4,8 @@
 <dict>
 	<key>fileTypes</key>
 	<array>
-		<string>mod</string>
 		<string>def</string>
+		<string>mod</string>
 	</array>
 	<key>name</key>
 	<string>Modula-2</string>
@@ -64,23 +64,47 @@
 				</dict>
 			</dict>
 			<key>comment</key>
-			<string>Definicion de identificadores predefinidos.</string>
+			<string>Classic Modula-2 (PIM) Pervasive Identifiers.</string>
 			<key>match</key>
-			<string>\b(ABS|ADDRES|ADR|BITSET|BOOLEAN|BYTE|CAP|CARDINAL|CHAR|CHR|DEC|DISPOSE|EXCL|FALSE|FLOAT|HALT|HIGH|INC|INCL|INTEGER|LONGCARD|LONGINT|LONGREAL|LONGWORD|NEW|NULLPROC|ODD|ORD|PROC|REAL|SHORTADDR|SHORTCARD|SHORTINT|SIZE|TRUE|TRUNC|VAL|VSIZE|WORD)\b</string>
+			<string>\b(ABS|BITSET|BOOLEAN|CAP|CARDINAL|CHAR|CHR|DEC|EXCL|FALSE|FLOAT|HALT|HIGH|INC|INCL|INTEGER|LONGINT|LONGREAL|MAX|MIN|NIL|ODD|ORD|PROC|SIZE|TRUE|TRUNC|VAL)\b</string>
 			<key>name</key>
 			<string>meta.function.modula2</string>
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>Definicion de palabras reservadas.</string>
+			<string>Classic Modula-2 (PIM) Reserved Words.</string>
 			<key>match</key>
-			<string>\b(AND|ARRAY|BEGIN|BY|CASE|CONST|DIV|DO|ELSE|ELSIF|END|EXIT|EXPORT|FOR|FORWARD|FROM|GOTO|IF|IMPORT|IN|LABEL|LOOP|MOD|NOT|OF|OR|POINTER|QUALIFIED|RECORD|REPEAT|RETURN|SET|THEN|TO|DOWNTO|TYPE|UNTIL|VAR|WHILE|WITH|NIL)\b</string>
+			<string>\b(AND|ARRAY|BEGIN|BY|CASE|CONST|DEFINITION|DIV|DO|ELSE|ELSIF|END|EXIT|EXPORT|FOR|FORWARD|FROM|IF|IMPLEMENTATION|IMPORT|IN|LOOP|MOD|MODULE|NOT|OF|OR|POINTER|PROCEDURE|QUALIFIED|RECORD|REPEAT|RETURN|SET|THEN|TO|TYPE|UNTIL|VAR|WHILE|WITH)\b</string>
 			<key>name</key>
 			<string>keyword.control.modula2</string>
 		</dict>
 		<dict>
 			<key>include</key>
 			<string>#block_comment</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>'</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.string.begin.modula2</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>'</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.string.end.modula2</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>string.quoted.single.modula2</string>
 		</dict>
 		<dict>
 			<key>begin</key>
@@ -105,15 +129,6 @@
 			</dict>
 			<key>name</key>
 			<string>string.quoted.double.modula2</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>match</key>
-					<string>\.</string>
-					<key>name</key>
-					<string>constant.character.escape.modula2</string>
-				</dict>
-			</array>
 		</dict>
 		<dict>
 			<key>match</key>
