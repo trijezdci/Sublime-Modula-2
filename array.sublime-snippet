@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <snippet>
     <content><![CDATA[
-ARRAY [$1] OF $2;
+ARRAY [$1 .. $2] OF $4;
 ]]></content>
 	<description>ARRAY OF</description>
     <tabTrigger>ARRAY</tabTrigger>
