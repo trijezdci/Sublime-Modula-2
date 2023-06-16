@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-PROCEDURE $1 ($2)$3;
+PROCEDURE $1 ($2) : $3;
 BEGIN
 	$4
 END $1;
