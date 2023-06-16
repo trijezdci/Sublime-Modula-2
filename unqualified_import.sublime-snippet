@@ -2,7 +2,7 @@
     <content><![CDATA[
 FROM $1	IMPORT $2;
 ]]></content>
-	<description>IMPORT</description>
+	<description>FROM ... IMPORT ...</description>
     <tabTrigger>FROM</tabTrigger>
     <scope>source.modula2</scope>
 </snippet>
