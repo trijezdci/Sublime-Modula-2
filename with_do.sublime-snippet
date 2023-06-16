@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
-WITH ($1) DO
-	${2}
+WITH $1 DO
+	$2
 END;
 ]]></content>
 	<description>WITH...DO</description>
