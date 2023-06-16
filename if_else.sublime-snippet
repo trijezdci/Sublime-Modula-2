@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <snippet>
     <content><![CDATA[
-IF ($1) THEN
+IF $1 THEN
 	$2
 ELSE
 	$3

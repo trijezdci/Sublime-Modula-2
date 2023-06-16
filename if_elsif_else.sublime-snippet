@@ -3,9 +3,13 @@
     <content><![CDATA[
 IF $1 THEN
 	$2
+ELSIF $3 THEN
+    $4
+ELSE
+	$5
 END;
 ]]></content>
-	<description>IF ... END</description>
+	<description>IF ... ELSIF ... ELSE</description>
     <tabTrigger>IF</tabTrigger>
     <scope>source.modula2</scope>
 </snippet>
