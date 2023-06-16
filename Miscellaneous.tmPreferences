@@ -24,7 +24,7 @@
 			</array>
 		</array>
 		<key>increaseIndentPattern</key>
-		<string>(?i:(BEGIN|ELSE|FOR|IF|LOOP|PROCEDURE|TYPE|VAR))</string>
+		<string>(?i:(BEGIN|CONST|ELSE|ELSIF|FOR|IF|LOOP|REPEAT|TYPE|VAR))</string>
 		<key>shellVariables</key>
 		<array>
 			<dict>
