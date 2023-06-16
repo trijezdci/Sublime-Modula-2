@@ -2,7 +2,7 @@
     <content><![CDATA[
 REPEAT
 	$2
-UNTIL ($1);
+UNTIL $1;
 ]]></content>
 	<description>REPEAT UNTIL</description>
     <tabTrigger>REPEAT</tabTrigger>
